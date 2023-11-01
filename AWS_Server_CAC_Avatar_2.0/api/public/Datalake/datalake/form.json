@@ -1,0 +1,135 @@
+{
+    "fields": [
+        
+        {
+            "name": "layout",
+            "component": "two-column",
+            "label": "AWS Region",
+            "uniqueKey":"uuidv4()",
+            "fields": [
+                {
+                    "name": "aws_region",
+                    "label": "AWS Region",
+                    "component": "Dropdown",
+                    "options":"Region",
+                    "optionLabel": "name",
+                    "optionValue": "value",
+                    "filter": false,
+                    "showClear": true,
+                    "filterBy": "name",
+                    "placeholder": "Select AWS Region",
+                    "uniqueKey": "uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "layout",
+            "component": "two-column",
+            "label": "S3 Bucket Details",
+            "uniqueKey":"uuidv4()",
+            "fields": [
+
+                {
+                    "name": "s3_bucket_raw",
+                    "label": "S3 Bucket Raw",
+                    "component": "InputText",
+                    "type": "text",  
+                    "uniqueKey":"uuidv4()"
+
+                },
+                
+                {
+                    "name": "s3_bucket_processed",
+                    "label": "S3 Bucket Processed",
+                    "component": "InputText",
+                    "type": "text",  
+                    "uniqueKey":"uuidv4()"
+
+                }
+              
+                
+            ]
+        },
+        {
+            "name": "layout",
+            "component": "two-column",
+            "label": "Data lake Details",
+            "uniqueKey":"uuidv4()",
+            "fields": [
+
+                {
+                    "name": "lake_db_name",
+                    "label": "Lake Database Name",
+                    "component": "InputText",
+                    "type": "text",  
+                    "uniqueKey":"uuidv4()"
+
+                },
+                 {
+                    "name": "data_lake_admin",
+                    "label": "Data Lake Admin",
+                    "component": "InputText",
+                    "type": "text",  
+                    "uniqueKey":"uuidv4()"
+
+                },
+                {
+                    "name": "glue_crawler_name",
+                    "label": "Glue Crawler Name",
+                    "component": "InputText",
+                    "type": "text",  
+                    "uniqueKey":"uuidv4()"
+
+                },
+                {
+                    "name": "glue_crawler_role",
+                    "label": "Glue Crawler Role",
+                    "component": "InputText",
+                    "type": "text",  
+                    "uniqueKey":"uuidv4()"
+
+                },
+                {
+                    "name": "workgroup_name",
+                    "label": "Athena Workgroup Name",
+                    "component": "InputText",
+                    "type": "text",  
+                    "uniqueKey":"uuidv4()"
+
+                }
+               
+              
+                
+            ]
+        },
+      
+      
+        {
+            "name": "layout",
+            "component": "two-column",
+            "label": "AWS Account Details",
+            "uniqueKey":"uuidv4()",
+            "fields": [
+                {
+                    "name": "aws_account",
+                    "label": "AWS Account ID",
+                    "component": "InputText",
+                    "type": "text",  
+                    "uniqueKey":"uuidv4()"
+
+                }
+               
+            ]
+        }  
+  
+    ],
+    "footer": {
+        "submit": { "label": "Review" }
+    }
+  }

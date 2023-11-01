@@ -1,0 +1,6 @@
+aws_region = "us-west-1" 
+s3_bucket_raw = "rawdata-landing123321" 
+s3_bucket_processed = "processeddatacgvbb323" 
+lake_db_name = "lake_db" 
+glue_crawler_name = "lake-crawler" 
+aws_account = "181597866704" 

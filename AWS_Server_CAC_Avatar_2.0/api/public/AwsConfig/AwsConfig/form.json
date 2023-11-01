@@ -1,0 +1,110 @@
+{
+    "fields": [
+        
+        {
+            "name": "layout",
+            "component": "two-column",
+            "label": "Region",
+            "uniqueKey":"uuidv4()",
+            "fields": [
+                {
+                    "name": "aws_region",
+                    "label": "AWS Region",
+                    "component": "Dropdown",
+                    "options":"Region",
+                    "optionLabel": "name",
+                    "optionValue": "value",
+                    "filter": false,
+                    "showClear": true,
+                    "filterBy": "name",
+                    "placeholder": "Select AWS Region",
+                    "uniqueKey": "uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "layout",
+            "component": "two-column",
+            "label": "Config Details",
+            "uniqueKey":"uuidv4()",
+            "fields": [
+                {
+                    "name": "name",
+                    "label": "Config Rule Name",
+                    "component": "InputText",
+                    "type": "text",
+                    "uniqueKey":"uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+
+                },
+                {
+                    "name": "s3_bucket",
+                    "label": "S3 Bucket Name",
+                    "component": "InputText",
+                    "type": "text",
+                    "uniqueKey":"uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+
+                },
+                {
+                    "name": "rules",
+                    "label": "Config Rule",
+                    "component": "InputText",
+                    "type": "text",
+                    "uniqueKey":"uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+
+                }
+
+            ]
+        },
+        {
+            "name": "layout",
+            "component": "two-column",
+            "label": "IAM Details",
+            "uniqueKey":"uuidv4()",
+            "fields": [
+                {
+                    "name": "policy_arn",
+                    "label": "IAM Policy ARN",
+                    "component": "InputText",
+                    "type": "text",
+                    "uniqueKey":"uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+
+                }
+            ]
+        }
+        
+  
+    ],
+    "footer": {
+        "submit": { "label": "Review" }
+    }
+  }

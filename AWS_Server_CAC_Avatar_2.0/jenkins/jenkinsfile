@@ -1,0 +1,40 @@
+pipeline {
+    agent any
+    environment {        
+        AWS_ACCESS_KEY = credentials('aws_access_key')
+        AWS_SECRET_KEY = credentials('aws_secret_key')  
+    }
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+
+        stage('Terraform Init') {
+            steps {
+                dir("${env.WORKSPACE}/AWS_Server_CAC_Avatar_2.0/${params.working_dir}") {
+                    sh 'terraform init -migrate-state'
+                }
+            }
+        }
+
+
+stage('Terraform Apply') {
+    steps {
+        dir("${env.WORKSPACE}/AWS_Server_CAC_Avatar_2.0/${params.working_dir}") {
+            sh """
+            echo "STARTApply"
+            terraform apply --var-file="${env.WORKSPACE}/AWS_Server_CAC_Avatar_2.0/requests/${params.req_id}.tfvars" -input=false -auto-approve -state="${params.req_id}.tfstate"
+            echo "ENDApply"
+            """
+        }
+    }
+}
+    }
+    }
+
+
+
+
+

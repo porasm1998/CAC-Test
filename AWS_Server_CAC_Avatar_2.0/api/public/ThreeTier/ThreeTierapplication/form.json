@@ -1,0 +1,496 @@
+{
+    "fields": [
+        
+        {
+            "name": "layout",
+            "component": "two-column",
+            "label": "AWS Region",
+            "uniqueKey":"uuidv4()",
+            "fields": [
+                {
+                    "name": "aws_region",
+                    "label": "AWS Region",
+                    "component": "Dropdown",
+                    "options":"Region",
+                    "optionLabel": "name",
+                    "optionValue": "value",
+                    "filter": false,
+                    "showClear": true,
+                    "filterBy": "name",
+                    "placeholder": "Select AWS Region",
+                    "uniqueKey": "uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "layout",
+            "component": "two-column",
+            "label": "VPC Details",
+            "uniqueKey":"uuidv4()",
+            "fields": [
+
+                {
+                    "name": "vpc_Name",
+                    "label": "Name of VPC",
+                    "component": "InputText",
+                    "type": "text",  
+                    "uniqueKey":"uuidv4()"
+
+                },
+                {
+                    "name": "vpc_cidr_block",
+                    "label": "CIDR Range",
+                    "component": "InputText",
+                    "type": "text",   
+                    "uniqueKey":"uuidv4()"
+
+                }
+                
+            ]
+        },
+        {
+            "name": "layout",
+            "component": "two-column",
+            "label": "Web Subnet Details",
+            "uniqueKey":"uuidv4()",
+            "fields": [
+                {
+                    "name": "web-subnet-1_Name ",
+                    "label": "Name of Subnet-1",
+                    "component": "InputText",
+                    "type": "text",  
+                    "uniqueKey":"uuidv4()"
+
+                },
+                {
+                    "name": "web-subnet-2_Name ",
+                    "label": "Name of Subnet-2",
+                    "component": "InputText",
+                    "type": "text",  
+                    "uniqueKey":"uuidv4()"
+
+                },
+                {
+                    "name": "web-subnet-1_cidr_block",
+                    "label": "Subnet-1 CIDR Range",
+                    "component": "InputText",
+                    "type": "text",   
+                    "uniqueKey":"uuidv4()"
+
+                },
+               
+                {
+                    "name": "web-subnet-2_cidr_block",
+                    "label": "Subnet-2 CIDR Range",
+                    "component": "InputText",
+                    "type": "text",   
+                    "uniqueKey":"uuidv4()"
+
+                },
+
+                {
+                    "name": "web-subnet-1_availability_zone",
+                    "label": "Availability Zone",
+                    "component": "Dropdown",
+                    "options":"Availability_Zone",
+                    "optionLabel": "name",
+                    "optionValue": "value",
+                    "filter": false,
+                    "showClear": true,
+                    "filterBy": "name",
+                    "placeholder": "Select Subnet-1 Availability Zone",
+                    "uniqueKey": "uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+                },
+                {
+                    "name": "web-subnet-2_availability_zone",
+                    "label": "Availability Zone",
+                    "component": "Dropdown",
+                    "options":"Availability_Zone",
+                    "optionLabel": "name",
+                    "optionValue": "value",
+                    "filter": false,
+                    "showClear": true,
+                    "filterBy": "name",
+                    "placeholder": "Select Subnet-2 Availability Zone",
+                    "uniqueKey": "uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+                }
+            
+               
+            ]
+        },
+        {
+            "name": "layout",
+            "component": "two-column",
+            "label": "App Subnet Details",
+            "uniqueKey":"uuidv4()",
+            "fields": [
+                {
+                    "name": "app-subnet-1_Name ",
+                    "label": "Name of Subnet-3",
+                    "component": "InputText",
+                    "type": "text",  
+                    "uniqueKey":"uuidv4()"
+
+                },
+                {
+                    "name": "app-subnet-2_Name ",
+                    "label": "Name of Subnet-4",
+                    "component": "InputText",
+                    "type": "text",  
+                    "uniqueKey":"uuidv4()"
+
+                },
+                {
+                    "name": "app-subnet-1_cidr_block",
+                    "label": "Subnet-3 CIDR Range",
+                    "component": "InputText",
+                    "type": "text",   
+                    "uniqueKey":"uuidv4()"
+
+                },
+               
+                {
+                    "name": "app-subnet-2_cidr_block",
+                    "label": "Subnet-4 CIDR Range",
+                    "component": "InputText",
+                    "type": "text",   
+                    "uniqueKey":"uuidv4()"
+
+                },
+
+                {
+                    "name": "app-subnet-1_availability_zone",
+                    "label": "Availability Zone",
+                    "component": "Dropdown",
+                    "options":"Availability_Zone",
+                    "optionLabel": "name",
+                    "optionValue": "value",
+                    "filter": false,
+                    "showClear": true,
+                    "filterBy": "name",
+                    "placeholder": "Select Subnet-3 Availability Zone",
+                    "uniqueKey": "uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+                },
+                {
+                    "name": "app-subnet-2_availability_zone",
+                    "label": "Availability Zone",
+                    "component": "Dropdown",
+                    "options":"Availability_Zone",
+                    "optionLabel": "name",
+                    "optionValue": "value",
+                    "filter": false,
+                    "showClear": true,
+                    "filterBy": "name",
+                    "placeholder": "Select Subnet-4 Availability Zone",
+                    "uniqueKey": "uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+                }
+            
+               
+            ]
+        },
+        {
+            "name": "layout",
+            "component": "two-column",
+            "label": "DB Subnet Details",
+            "uniqueKey":"uuidv4()",
+            "fields": [
+                {
+                    "name": "db-subnet-1_Name ",
+                    "label": "Name of Subnet-5",
+                    "component": "InputText",
+                    "type": "text",  
+                    "uniqueKey":"uuidv4()"
+
+                },
+                {
+                    "name": "db-subnet-2_Name ",
+                    "label": "Name of Subnet-6",
+                    "component": "InputText",
+                    "type": "text",  
+                    "uniqueKey":"uuidv4()"
+
+                },
+                {
+                    "name": "db-subnet-1_cidr_block",
+                    "label": "Subnet-5 CIDR Range",
+                    "component": "InputText",
+                    "type": "text",   
+                    "uniqueKey":"uuidv4()"
+
+                },
+               
+                {
+                    "name": "db-subnet-2_cidr_block",
+                    "label": "Subnet-6 CIDR Range",
+                    "component": "InputText",
+                    "type": "text",   
+                    "uniqueKey":"uuidv4()"
+
+                },
+
+                {
+                    "name": "db-subnet-1_availability_zone",
+                    "label": "Availability Zone",
+                    "component": "Dropdown",
+                    "options":"Availability_Zone",
+                    "optionLabel": "name",
+                    "optionValue": "value",
+                    "filter": false,
+                    "showClear": true,
+                    "filterBy": "name",
+                    "placeholder": "Select Subnet-5 Availability Zone",
+                    "uniqueKey": "uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+                },
+                {
+                    "name": "db-subnet-2_availability_zone",
+                    "label": "Availability Zone",
+                    "component": "Dropdown",
+                    "options":"Availability_Zone",
+                    "optionLabel": "name",
+                    "optionValue": "value",
+                    "filter": false,
+                    "showClear": true,
+                    "filterBy": "name",
+                    "placeholder": "Select Subnet-6 Availability Zone",
+                    "uniqueKey": "uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+                }
+            
+               
+            ]
+        },
+        {
+            "name": "layout",
+            "component": "two-column",
+            "label": "Web Server Details",
+            "uniqueKey":"uuidv4()",
+            "fields": [
+
+                {
+                    "name": "web_ami_id",
+                    "label": "Web AMI ID ",
+                    "component": "Dropdown",
+                    "options":"Amiid",
+                    "optionLabel": "name",
+                    "optionValue": "value",
+                    "filter": false,
+                    "showClear": true,
+                    "filterBy": "name",
+                    "placeholder": "Select AMI ID",
+                    "uniqueKey": "uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+                },
+                {
+                    "name": "web_instance_type",
+                    "label": "Instance Type",
+                    "component": "Dropdown",
+                    "options":"Instance_Type",
+                    "optionLabel": "name",
+                    "optionValue": "value",
+                    "filter": false,
+                    "showClear": true,
+                    "filterBy": "name",
+                    "placeholder": "Select Web Server Instance Type",
+                    "uniqueKey": "uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+                }
+                
+            ]
+        },
+        {
+            "name": "layout",
+            "component": "two-column",
+            "label": "App Server Details",
+            "uniqueKey":"uuidv4()",
+            "fields": [
+
+                {
+                    "name": "app_ami_id",
+                    "label": "App AMI ID ",
+                    "component": "Dropdown",
+                    "options":"Amiid",
+                    "optionLabel": "name",
+                    "optionValue": "value",
+                    "filter": false,
+                    "showClear": true,
+                    "filterBy": "name",
+                    "placeholder": "Select AMI ID",
+                    "uniqueKey": "uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+                },
+                {
+                    "name": "app_instance_type",
+                    "label": "Instance Type",
+                    "component": "Dropdown",
+                    "options":"Instance_Type",
+                    "optionLabel": "name",
+                    "optionValue": "value",
+                    "filter": false,
+                    "showClear": true,
+                    "filterBy": "name",
+                    "placeholder": "Select App Server Instance Type",
+                    "uniqueKey": "uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+                }
+                
+            ]
+        },
+        {
+            "name": "layout",
+            "component": "two-column",
+            "label": "DB Server Details",
+            "uniqueKey":"uuidv4()",
+            "fields": [
+
+                {
+                    "name": "db_ami_id",
+                    "label": "DB AMI ID ",
+                    "component": "Dropdown",
+                    "options":"Amiid",
+                    "optionLabel": "name",
+                    "optionValue": "value",
+                    "filter": false,
+                    "showClear": true,
+                    "filterBy": "name",
+                    "placeholder": "Select AMI ID",
+                    "uniqueKey": "uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+                },
+                {
+                    "name": "db_instance_type",
+                    "label": "Instance Type",
+                    "component": "Dropdown",
+                    "options":"Instance_Type",
+                    "optionLabel": "name",
+                    "optionValue": "value",
+                    "filter": false,
+                    "showClear": true,
+                    "filterBy": "name",
+                    "placeholder": "Select DB Server Instance Type",
+                    "uniqueKey": "uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+                }
+                
+            ]
+        },
+        {
+            "name": "layout",
+            "component": "two-column",
+            "label": "Key_Pair Details",
+            "uniqueKey":"uuidv4()",
+            "fields": [
+                {
+                    "name": "key_name",
+                    "label": "Key Name",
+                    "component": "Dropdown",
+                    "options":"Key",
+                    "optionLabel": "name",
+                    "optionValue": "value",
+                    "filter": false,
+                    "showClear": true,
+                    "filterBy": "name",
+                    "placeholder": "Select Key Name",
+                    "uniqueKey": "uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "layout",
+            "component": "two-column",
+            "label": "Bucket Details",
+            "uniqueKey":"uuidv4()",
+            "fields": [
+                {
+                    "name": "bucket_name",
+                    "label": "Name of Bucket",
+                    "component": "InputText",
+                    "type": "text",  
+                    "uniqueKey":"uuidv4()"
+
+                }
+            ]
+        }
+        
+  
+    ],
+    "footer": {
+        "submit": { "label": "Review" }
+    }
+  }

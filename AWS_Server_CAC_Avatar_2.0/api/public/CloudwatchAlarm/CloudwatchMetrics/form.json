@@ -1,0 +1,154 @@
+{
+    "fields": [
+        
+        {
+            "name": "layout",
+            "component": "two-column",
+            "label": "Region",
+            "uniqueKey":"uuidv4()",
+            "fields": [
+                {
+                    "name": "aws_region",
+                    "label": "AWS Region",
+                    "component": "Dropdown",
+                    "options":"Region",
+                    "optionLabel": "name",
+                    "optionValue": "value",
+                    "filter": false,
+                    "showClear": true,
+                    "filterBy": "name",
+                    "placeholder": "Select AWS Region",
+                    "uniqueKey": "uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "layout",
+            "component": "two-column",
+            "label": "Alarm Details",
+            "uniqueKey":"uuidv4()",
+            "fields": [
+                {
+                    "name": "alarm_name",
+                    "label": "Alarm Name",
+                    "component": "InputText",
+                    "type": "text",
+                    
+                    "uniqueKey":"uuidv4()"
+
+                },
+                {
+                    "name": "namespace",
+                    "label": "Namespace of metric",
+                    "component": "InputText",
+                    "type": "text",
+                    
+                    "uniqueKey":"uuidv4()"
+
+                },
+                {
+                    "name": "metric_name",
+                    "label": "Name of metric",
+                    "component": "InputText",
+                    "type": "text",
+                    
+                    "uniqueKey":"uuidv4()"
+
+                },
+                {
+                    "name": "comparison_operator",
+                    "label": "Comparison Operator",
+                    "component": "InputText",
+                    "type": "text",
+                    
+                    "uniqueKey":"uuidv4()"
+
+                },
+                {
+                    "name": "threshold",
+                    "label": "Threshold value in %",
+                    "component": "InputText",
+                    "type": "text",
+                    
+                    "uniqueKey":"uuidv4()"
+
+                },
+                {
+                    "name": "evaluation_periods",
+                    "label": "Evaluation period",
+                    "component": "InputText",
+                    "type": "text",
+                    
+                    "uniqueKey":"uuidv4()"
+
+                },
+                {
+                    "name": "period",
+                    "label": "Period in seconds",
+                    "component": "InputText",
+                    "type": "text",
+                    
+                    "uniqueKey":"uuidv4()"
+
+                },
+                {
+                    "name": "alarm_description",
+                    "label": "Description of alarm",
+                    "component": "InputText",
+                    "type": "text",
+                    
+                    "uniqueKey":"uuidv4()"
+
+                }
+
+            ]
+        },
+        {
+            "name": "layout",
+            "component": "two-column",
+            "label": "SNS Details",
+            "uniqueKey":"uuidv4()",
+            "fields": [
+                {
+                    "name": "sns_arn",
+                    "label": "SNS topic arn to notify",
+                    "component": "InputText",
+                    "type": "text",
+                    
+                    "uniqueKey":"uuidv4()"
+
+                }
+
+            ]
+        },
+        {
+            "name": "layout",
+            "component": "two-column",
+            "label": "EC2 Details",
+            "uniqueKey":"uuidv4()",
+            "fields": [
+                {
+                    "name": "InstanceId",
+                    "label": "EC2 Instance ID to monitor",
+                    "component": "InputText",
+                    "type": "text",
+                    
+                    "uniqueKey":"uuidv4()"
+
+                }
+
+            ]
+        }
+        
+  
+    ],
+    "footer": {
+        "submit": { "label": "Review" }
+    }
+  }

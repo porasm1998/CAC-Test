@@ -1,0 +1,145 @@
+{
+    "fields": [
+        
+        {
+            "name": "layout",
+            "component": "two-column",
+            "label": "Region",
+            "uniqueKey":"uuidv4()",
+            "fields": [
+                {
+                    "name": "aws_region",
+                    "label": "AWS Region",
+                    "component": "Dropdown",
+                    "options":"Region",
+                    "optionLabel": "name",
+                    "optionValue": "value",
+                    "filter": false,
+                    "showClear": true,
+                    "filterBy": "name",
+                    "placeholder": "Select AWS Region",
+                    "uniqueKey": "uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "layout",
+            "component": "two-column",
+            "label": "VPC Details",
+            "uniqueKey":"uuidv4()",
+            "fields": [
+                {
+                    "name": "vpc1",
+                    "label": "Existing destination VPC ID",
+                    "component": "InputText",
+                    "type": "text",
+                    "uniqueKey":"uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+
+                },
+                {
+                    "name": "vpc1_subnet_ids ",
+                    "label": "Existing destination Subnet ID",
+                    "component": "Chips",
+                    "uniqueKey":"uuidv4()"
+
+                },
+                {
+                    "name": "destination_cidr_block1",
+                    "label": "Existing destination VPC CIDR Range",
+                    "component": "InputText",
+                    "type": "text",
+                    "uniqueKey":"uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+
+                },
+                {
+                    "name": "vpc1_route_table_id",
+                    "label": "Existing destination VPC Route Table ID",
+                    "component": "InputText",
+                    "type": "text",
+                    "uniqueKey":"uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+
+                },
+                {
+                    "name": "vpc2 ",
+                    "label": "Existing destination VPC ID",
+                    "component": "InputText",
+                    "type": "text",
+                    "uniqueKey":"uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+
+                },
+                {
+                    "name": "vpc2_subnet_ids",
+                    "label": "Existing destination Subnet ID",
+                    "component": "Chips",
+                    "uniqueKey":"uuidv4()"
+
+                },
+                {
+                    "name": "destination_cidr_block2 ",
+                    "label": "Existing destination VPC CIDR Range",
+                    "component": "InputText",
+                    "type": "text",
+                    "uniqueKey":"uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+
+                },
+                {
+                    "name": "vpc2_route_table_id ",
+                    "label": "Existing destination VPC Route Table",
+                    "component": "InputText",
+                    "type": "text",
+                    "uniqueKey":"uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+
+                }
+               
+
+            ]
+        }
+        
+  
+    ],
+    "footer": {
+        "submit": { "label": "Review" }
+    }
+  }

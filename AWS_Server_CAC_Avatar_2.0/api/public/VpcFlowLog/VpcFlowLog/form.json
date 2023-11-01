@@ -1,0 +1,101 @@
+{
+    "fields": [
+        
+        {
+            "name": "layout",
+            "component": "two-column",
+            "label": "Region",
+            "uniqueKey":"uuidv4()",
+            "fields": [
+                {
+                    "name": "aws_region",
+                    "label": "AWS Region",
+                    "component": "Dropdown",
+                    "options":"Region",
+                    "optionLabel": "name",
+                    "optionValue": "value",
+                    "filter": false,
+                    "showClear": true,
+                    "filterBy": "name",
+                    "placeholder": "Select AWS Region",
+                    "uniqueKey": "uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "layout",
+            "component": "two-column",
+            "label": "VPC Details",
+            "uniqueKey":"uuidv4()",
+            "fields": [
+                {
+                    "name": "vpc_id",
+                    "label": "VPC ID",
+                    "component": "Dropdown",
+                    "options":"Vpc",
+                    "optionLabel": "name",
+                    "optionValue": "value",
+                    "filter": false,
+                    "showClear": true,
+                    "filterBy": "name",
+                    "placeholder": "Select VPC ID",
+                    "uniqueKey": "uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+                }
+
+            ]
+        },
+        {
+            "name": "layout",
+            "component": "two-column",
+            "label": "Log Details",
+            "uniqueKey":"uuidv4()",
+            "fields": [
+                {
+                    "name": "log_destination",
+                    "label": "Log Destination",
+                    "component": "InputText",
+                    "type": "text",
+                    
+                    "uniqueKey":"uuidv4()"
+
+                }
+
+            ]
+        },
+        {
+            "name": "layout",
+            "component": "two-column",
+            "label": "IAM Details",
+            "uniqueKey":"uuidv4()",
+            "fields": [
+                {
+                    "name": "iam_role_arn",
+                    "label": "IAM Role ARN",
+                    "component": "InputText",
+                    "type": "text",
+                    
+                    "uniqueKey":"uuidv4()"
+
+                }
+
+            ]
+        }
+        
+  
+    ],
+    "footer": {
+        "submit": { "label": "Review" }
+    }
+  }

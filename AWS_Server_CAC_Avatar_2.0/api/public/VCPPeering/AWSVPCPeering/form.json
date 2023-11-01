@@ -1,0 +1,146 @@
+{
+    "fields": [
+        
+        {
+            "name": "layout",
+            "component": "two-column",
+            "label": "Region",
+            "uniqueKey":"uuidv4()",
+            "fields": [
+                {
+                    "name": "aws_region",
+                    "label": "AWS Region",
+                    "component": "Dropdown",
+                    "options":"Region",
+                    "optionLabel": "name",
+                    "optionValue": "value",
+                    "filter": false,
+                    "showClear": true,
+                    "filterBy": "name",
+                    "placeholder": "Select AWS Region",
+                    "uniqueKey": "uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "layout",
+            "component": "two-column",
+            "label": "VPC Details",
+            "uniqueKey":"uuidv4()",
+            "fields": [
+                {
+                    "name": "VPC_ID1",
+                    "label": "Existing source VPC ID",
+                    "component": "InputText",
+                    "type": "text",
+                    "uniqueKey":"uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+
+                },
+                {
+                    "name": "cidr_vpc1",
+                    "label": "Existing source VPC CIDR Range",
+                    "component": "InputText",
+                    "type": "text",
+                    "uniqueKey":"uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+
+                },
+                {
+                    "name": "peer_vpc_route_table",
+                    "label": "Existing source VPC Route Table ID",
+                    "component": "InputText",
+                    "type": "text",
+                    "uniqueKey":"uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+
+                },
+                {
+                    "name": "VPC_ID2",
+                    "label": "Existing destination VPC ID",
+                    "component": "InputText",
+                    "type": "text",
+                    "uniqueKey":"uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+
+                },
+                {
+                    "name": "cidr_vpc2",
+                    "label": "Existing destination VPC CIDR Range",
+                    "component": "InputText",
+                    "type": "text",
+                    "uniqueKey":"uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+
+                },
+                {
+                    "name": "vpc_route_table",
+                    "label": "Existing destination VPC Route Table",
+                    "component": "InputText",
+                    "type": "text",
+                    "uniqueKey":"uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+
+                },
+
+                {
+                    "name": "peering_connection_name",
+                    "label": "Name of the Peering Connection",
+                    "component": "InputText",
+                    "type": "text",
+                    "uniqueKey":"uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+
+                }
+               
+
+            ]
+        }
+        
+  
+    ],
+    "footer": {
+        "submit": { "label": "Review" }
+    }
+  }

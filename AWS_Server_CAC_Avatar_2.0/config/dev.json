@@ -1,0 +1,409 @@
+{
+    "dbConfig": {
+        "database": "Y2Fj",
+        "username": "Y2FjX3VzZXI=",
+        "password": "Y2FjX3VzZXI=",
+        "host": "bG9jYWxob3N0",
+        "dialect": "mysql"
+    },
+    "Location": {
+        "AZURE": {
+            "Module": {
+                "redshift": {
+                    "tfvarPath": "terraform_scripts/AWS/modules/redshift/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/modules/redshift/redshift.sh"
+                },
+                "VnetCreation1": {
+                    "tfvarPath": "terraform_scripts/AZURE/Module/vnetCreation/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AZURE/Module/vnetCreation.sh"
+                },
+                "Nsg": {
+                    "tfvarPath": "terraform_scripts/AZURE/Module/Nsg/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AZURE/Module/Nsg.sh"
+                },
+                "WindowsVm": {
+                    "tfvarPath": "terraform_scripts/AZURE/Module/WindowsVm/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AZURE/Module/WindowsVm.sh"
+                }
+            }
+        },
+        "AWS": {
+            "Module": {
+                "AmiHardning": {
+                    "tfvarPath": "terraform_scripts/AWS/modules/Ami-Hardning"
+                   
+                },
+                
+                "WindowsAmihardening": {
+                    "tfvarPath": "terraform_scripts/AWS/modules/Ami-Hardning"
+                },
+                "Dynamodb1": {
+                    "tfvarPath": "terraform_scripts/AWS/modules/Dynamodb/Dynamodb1/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/modules/Dynamodb/Dynamodb1.sh"
+                },
+                "Dynamodb2": {
+                    "tfvarPath": "terraform_scripts/AWS/modules/Dynamodb/Dynamodb2/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/modules/Dynamodb/Dynamodb2.sh"
+                },
+                "vpc1": {
+                    "tfvarPath": "terraform_scripts/AWS/modules/VPC/VPC1/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/modules/VPC/vpc1.sh"
+                },
+                "vpc2": {
+                    "tfvarPath": "terraform_scripts/AWS/modules/VPC/VPC2/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/modules/VPC/vpc2.sh"
+                },
+                "vpc3": {
+                    "tfvarPath": "terraform_scripts/AWS/modules/VPC/VPC3/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/modules/VPC/vpc3.sh"
+                },
+                "vpc5": {
+                    "tfvarPath": "terraform_scripts/AWS/modules/VPC/VPC5/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/modules/VPC/vpc5.sh"
+                },
+                "S3Bucket": {
+                    "tfvarPath": "terraform_scripts/AWS/modules/S3Bucket/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/modules/S3Bucket/S3Bucket.sh"
+                },
+                "EbsVolumeCreation": {
+                    "tfvarPath": "terraform_scripts/AWS/modules/EbsVolumeCreation/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/modules/EbsVolumeCreation/EbsVolumeCreation.sh"
+                },
+                "RdsCreation": {
+                    "tfvarPath": "terraform_scripts/AWS/modules/RdsCreation/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/modules/RdsCreation/RdsCreation.sh"
+                },
+                "EfsCreation": {
+                    "tfvarPath": "terraform_scripts/AWS/modules/EfsCreation/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/modules/EfsCreation/EfsCreation.sh"
+                },
+                "EbsSnapshot": {
+                    "tfvarPath": "terraform_scripts/AWS/modules/EbsSnapshot/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/modules/EbsSnapshot/EbsSnapshot.sh"
+                },
+                "Ec2InstanceCreation": {
+                    "tfvarPath": "terraform_scripts/AWS/modules/Ec2InstanceCreation/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/modules/Ec2InstanceCreation/Ec2InstanceCreation.sh"
+                },
+                "Ec2Clone": {
+                    "tfvarPath": "terraform_scripts/AWS/modules/Ec2Clone/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/modules/Ec2Clone/Ec2Clone.sh"
+                },
+                "FlowlogNs3": {
+                    "tfvarPath": "terraform_scripts/AWS/modules/FlowlogNs3/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/modules/Flowlog/FlowlogNs3.sh"
+                },
+                "Flowlogs3": {
+                    "tfvarPath": "terraform_scripts/AWS/modules/Flowlogs3/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/modules/Flowlog/Flowlogs3.sh"
+                },
+                "FlowlogNcw": {
+                    "tfvarPath": "terraform_scripts/AWS/modules/FlowlogNcw/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/modules/Flowlog/FlowlogNcw.sh"
+                },
+                "Flowlogcw": {
+                    "tfvarPath": "terraform_scripts/AWS/modules/Flowlogcw/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/modules/Flowlog/Flowlogcw.sh"
+                },
+                "Ec2Autoscalling": {
+                    "tfvarPath": "terraform_scripts/AWS/modules/Ec2Autoscalling/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/modules/Ec2Autoscalling/Ec2Autoscalling.sh"
+                },
+                "Ec2Loadbalancer": {
+                    "tfvarPath": "terraform_scripts/AWS/modules/Ec2Loadbalancer/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/modules/Ec2Loadbalancer/Ec2Loadbalancer.sh"
+                },
+                "aws_ec2": {
+                    "tfvarPath": "terraform_scripts/AWS/modules/aws-ec2-monitoring/aws-ec2-monitoring/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/modules/aws-ec2-monitoring/aws-ec2-monitoring.sh"
+                },
+                "aws-sns-topic": {
+                    "tfvarPath": "terraform_scripts/AWS/modules/aws-sns-topic/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/modules/aws-sns-topic/aws-sns-topic.sh"
+                },
+                "Ec2WithAlbNlb": {
+                    "tfvarPath": "terraform_scripts/AWS/modules/aws-fullfledged-vm-lb/aws-fullfledged-vm-nlb/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/modules/Ec2WithAlbNlb/Ec2WithAlbNlb.sh"
+                },
+                "Ec2MInstance": {
+                    "tfvarPath": "terraform_scripts/AWS/modules/Ec2MInstance/Ec2MInstance/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/modules/Ec2MInstance/Ec2MInstance.sh"
+                },
+                "rds_creation_monitoring": {
+                    "tfvarPath": "terraform_scripts/AWS/modules/RdswithMonitoring/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/modules/RdsWithMonitoring/RdsWithMonitoring.sh"
+                },
+                "Awsemr": {
+                    "tfvarPath": "terraform_scripts/AWS/modules/aws-fullfledged-emr/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/modules/aws-fullfleged-emr/aws-fullfleged-emr.sh"
+                },
+                "SubnetCreation": {
+                    "tfvarPath": "terraform_scripts/AWS/modules/Aws-subnet/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/modules/terraformsubnet/subnet.sh"
+                }
+            },
+            "Container": {
+                "EcsClusterDockerTwoTier": {
+                    "tfvarPath": "terraform_scripts/AWS/Container/EcsClusterDockerTwoTier/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/Container/EcsClusterDockerTwoTier.sh"
+                },
+                "EcsClusterDocker": {
+                    "tfvarPath": "terraform_scripts/AWS/Container/EcsClusterDocker/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/Container/EcsClusterDocker.sh"
+                },
+                "eks": {
+                    "tfvarPath": "terraform_scripts/AWS/Container/eks/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/Container/eks.sh"
+                },
+                "aws_containers": {
+                    "tfvarPath": "terraform_scripts/AWS/Container/aws-fullfledged-containers/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/Container/aws-fullfleged-containers/aws-fullfleged-containers.sh"
+                },
+                "EksWithManagedNode": {
+                    "tfvarPath": "terraform_scripts/AWS/Container/Fully_Private_eks_cluster/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/Container/Fully_Private_eks_cluster.sh"
+                }
+            },
+            "Cognito": {
+                "cognito1": {
+                    "tfvarPath": "terraform_scripts/AWS/cognito/cognito1/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/Cognito/cognito1.sh"
+                }
+            },
+            "Datalake": {
+                "datalake1": {
+                    "tfvarPath": "terraform_scripts/AWS/Datalake/datalake1/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/DataLake/datalake1.sh"
+                },
+                "datalake2": {
+                    "tfvarPath": "terraform_scripts/AWS/Datalake/datalake2/code/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/DataLake/datalake2.sh"
+                },
+                "datalake3": {
+                    "tfvarPath": "terraform_scripts/AWS/Datalake/datalake3/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/DataLake/datalake3.sh"
+                },
+                "datalake4": {
+                    "tfvarPath": "terraform_scripts/AWS/Datalake/datalake4/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/DataLake/datalake4.sh"
+                },
+                "datalake5": {
+                    "tfvarPath": "terraform_scripts/AWS/Datalake/datalake5/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/DataLake/datalake5.sh"
+                },
+                "datalake6": {
+                    "tfvarPath": "terraform_scripts/AWS/Datalake/datalake6/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/DataLake/datalake6.sh"
+                },
+                "datalake7": {
+                    "tfvarPath": "terraform_scripts/AWS/Datalake/datalake7/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/DataLake/datalake7.sh"
+                },
+                "datalake8": {
+                    "tfvarPath": "terraform_scripts/AWS/Datalake/datalake8/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/DataLake/datalake8.sh"
+                },
+                "datalake9": {
+                    "tfvarPath": "terraform_scripts/AWS/Datalake/datalake9/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/DataLake/datalake9.sh"
+                },
+                "DatalakeFullfledged": {
+                    "tfvarPath": "terraform_scripts/AWS/modules/datalake/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/DataLake/datalakeFullfledged.sh"
+                }
+            },
+            "3-tier": {
+                "ap1": {
+                    "tfvarPath": "terraform_scripts/AWS/3-tier/ap1/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/3-tier-web-application/ap1.sh"
+                },
+                "ap2": {
+                    "tfvarPath": "terraform_scripts/AWS/3-tier/ap2/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/3-tier-web-application/ap2.sh"
+                },
+                "ap3": {
+                    "tfvarPath": "terraform_scripts/AWS/3-tier/ap3/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/3-tier-web-application/ap3.sh"
+                },
+                "ap4": {
+                    "tfvarPath": "terraform_scripts/AWS/3-tier/ap4/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/3-tier-web-application/ap4.sh"
+                },
+                "ap5": {
+                    "tfvarPath": "terraform_scripts/AWS/3-tier/ap5/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/3-tier-web-application/ap5.sh"
+                },
+                "ap6": {
+                    "tfvarPath": "terraform_scripts/AWS/3-tier/ap6/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/3-tier-web-application/ap6.sh"
+                },
+                "ThreeTier": {
+                    "tfvarPath": "terraform_scripts/AWS/3-tier/ThreeTier/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/3-tier-web-application/ThreeTier.sh"
+                }
+            },
+            "Blueprint": {
+                "aws_Ap7": {
+                    "tfvarPath": "terraform_scripts/AWS/3-tier/Three-tier-fullfleged/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/3-tier-web-application/ap7/ap7.sh"
+                },
+                "aws_Ap8": {
+                    "tfvarPath": "terraform_scripts/AWS/3-tier/Three-tier-ec2/tfinputs",
+                    "scriptPath": "tf-bs-scripts/AWS/3-tier-web-application/ap8/ap8.sh"
+                }
+            }
+        },
+        "GCP": {
+            "Module": {
+                "Net1": {
+                    "tfvarPath": "terraform_scripts/GCP/Module/Network/Net1/tfinputs",
+                    "scriptPath": "tf-bs-scripts/GCP/Module/Network/net1.sh",
+                    "credPath": "terraform_scripts/GCP/Module/Network/Net1/instance.json"
+                },
+                "Folder": {
+                    "tfvarPath": "terraform_scripts/GCP/Module/folder/tfinputs",
+                    "scriptPath": "tf-bs-scripts/GCP/Module/folder.sh",
+                    "credPath": "terraform_scripts/GCP/Module/folder/instance.json"
+                },
+                "Project": {
+                    "tfvarPath": "terraform_scripts/GCP/Module/project/tfinputs",
+                    "scriptPath": "tf-bs-scripts/GCP/Module/project.sh",
+                    "credPath": "terraform_scripts/GCP/Module/project/instance.json"
+                },
+                "HostProject": {
+                    "tfvarPath": "terraform_scripts/GCP/Module/Hostproject/tfinputs",
+                    "scriptPath": "tf-bs-scripts/GCP/Module/hostproject.sh",
+                    "credPath": "terraform_scripts/GCP/Module/Hostproject/instance.json"
+                },
+                "Storagebucket": {
+                    "tfvarPath": "terraform_scripts/GCP/Module/Storagebucket/tfinputs",
+                    "scriptPath": "tf-bs-scripts/GCP/Module/storagebucket.sh",
+                    "credPath": "terraform_scripts/GCP/Module/Storagebucket/instance.json"
+                },
+                "Serviceproject": {
+                    "tfvarPath": "terraform_scripts/GCP/Module/Serviceproject/tfinputs",
+                    "scriptPath": "tf-bs-scripts/GCP/Module/serviceproject.sh",
+                    "credPath": "terraform_scripts/GCP/Module/Serviceproject/instance.json"
+                },
+                "Notificationchannel": {
+                    "tfvarPath": "terraform_scripts/GCP/Module/Notificationchannel/tfinputs",
+                    "scriptPath": "tf-bs-scripts/GCP/Module/notificationchannel.sh",
+                    "credPath": "terraform_scripts/GCP/Module/Notificationchannel/instance.json"
+                },
+                "Containerregistry": {
+                    "tfvarPath": "terraform_scripts/GCP/Module/Containerregistry/tfinputs",
+                    "scriptPath": "tf-bs-scripts/GCP/Module/containerregistry.sh",
+                    "credPath": "terraform_scripts/GCP/Module/Containerregistry/instance.json"
+                },
+                "Computedisk": {
+                    "tfvarPath": "terraform_scripts/GCP/Module/Computedisk/tfinputs",
+                    "scriptPath": "tf-bs-scripts/GCP/Module/computedisk.sh",
+                    "credPath": "terraform_scripts/GCP/Module/Computedisk/instance.json"
+                },
+                "vpngateway": {
+                    "tfvarPath": "terraform_scripts/GCP/Module/Vpngateway/tfinputs",
+                    "scriptPath": "tf-bs-scripts/GCP/Module/vpngateway.sh",
+                    "credPath": "terraform_scripts/GCP/Module/Vpngateway/instance.json"
+                },
+                "Artifactregistry": {
+                    "tfvarPath": "terraform_scripts/GCP/Module/Artifactregistry/tfinputs",
+                    "scriptPath": "tf-bs-scripts/GCP/Module/artifactregistry.sh",
+                    "credPath": "terraform_scripts/GCP/Module/Artifactregistry/instance.json"
+                },
+                "Sourcerepo": {
+                    "tfvarPath": "terraform_scripts/GCP/Module/SourceRepo/tfinputs",
+                    "scriptPath": "tf-bs-scripts/GCP/Module/sourcerepo.sh",
+                    "credPath": "terraform_scripts/GCP/Module/SourceRepo/instance.json"
+                },
+                "cloudbuild": {
+                    "tfvarPath": "terraform_scripts/GCP/Module/Cloudbuild/tfinputs",
+                    "scriptPath": "tf-bs-scripts/GCP/Module/cloudbuild.sh",
+                    "credPath": "terraform_scripts/GCP/Module/Cloudbuild/instance.json"
+                },
+                "SnapshotPolicy": {
+                    "tfvarPath": "terraform_scripts/GCP/Module/SnapshotPolicy/tfinputs",
+                    "scriptPath": "tf-bs-scripts/GCP/Module/snapshotpolicy.sh",
+                    "credPath": "terraform_scripts/GCP/Module/SnapshotPolicy/instance.json"
+                },
+                "ServiceAccount": {
+                    "tfvarPath": "terraform_scripts/GCP/Module/ServiceAccount/tfinputs",
+                    "scriptPath": "tf-bs-scripts/GCP/Module/serviceaccount.sh",
+                    "credPath": "terraform_scripts/GCP/Module/ServiceAccount/instance.json"
+                },
+                "InspectionTemplate": {
+                    "tfvarPath": "terraform_scripts/GCP/Module/DLP/InspectionTemplate/tfinputs",
+                    "scriptPath": "tf-bs-scripts/GCP/Module/DLP/inspectiontemplate.sh",
+                    "credPath": "terraform_scripts/GCP/Module/DLP/InspectionTemplate/instance.json"
+                },
+                "Filestore": {
+                    "tfvarPath": "terraform_scripts/GCP/Module/Filestore/tfinputs",
+                    "scriptPath": "tf-bs-scripts/GCP/Module/filestore.sh",
+                    "credPath": "terraform_scripts/GCP/Module/Filestore/instance.json"
+                },
+                "JobTrigger": {
+                    "tfvarPath": "terraform_scripts/GCP/Module/DLP/JobTrigger/tfinputs",
+                    "scriptPath": "tf-bs-scripts/GCP/Module/DLP/jobtrigger.sh",
+                    "credPath": "terraform_scripts/GCP/Module/DLP/JobTrigger/instance.json"
+                },
+                "LogExport": {
+                    "tfvarPath": "terraform_scripts/GCP/Module/LogExport/tfinputs",
+                    "scriptPath": "tf-bs-scripts/GCP/Module/logexport.sh",
+                    "credPath": "terraform_scripts/GCP/Module/LogExport/instance.json"
+                },
+                "PSC": {
+                    "tfvarPath": "terraform_scripts/GCP/Module/PSC/tfinputs",
+                    "scriptPath": "tf-bs-scripts/GCP/Module/psc.sh",
+                    "credPath": "terraform_scripts/GCP/Module/PSC/instance.json"
+                },
+                "BudgetAlert": {
+                    "tfvarPath": "terraform_scripts/GCP/Module/BudgetAlert/tfinputs",
+                    "scriptPath": "tf-bs-scripts/GCP/Module/budgetalert.sh",
+                    "credPath": "terraform_scripts/GCP/Module/BudgetAlert/instance.json"
+                },
+                "VpcPeering": {
+                    "tfvarPath": "terraform_scripts/GCP/Module/VpcPeering/tfinputs",
+                    "scriptPath": "tf-bs-scripts/GCP/Module/vpcpeering.sh",
+                    "credPath": "terraform_scripts/GCP/Module/VpcPeering/instance.json"
+                },
+                "PubSubLite": {
+                    "tfvarPath": "terraform_scripts/GCP/Module/PubSub/PubSubLite/tfinputs",
+                    "scriptPath": "tf-bs-scripts/GCP/Module/PubSub/pubsublite.sh",
+                    "credPath": "terraform_scripts/GCP/Module/PubSub/PubSubLite/instance.json"
+                },
+                "PubSubSchema": {
+                    "tfvarPath": "terraform_scripts/GCP/Module/PubSub/PubSubSchema/tfinputs",
+                    "scriptPath": "tf-bs-scripts/GCP/Module/PubSub/pubsubschema.sh",
+                    "credPath": "terraform_scripts/GCP/Module/PubSub/PubSubSchema/instance.json"
+                },
+                "ComputeAddress": {
+                    "tfvarPath": "terraform_scripts/GCP/Module/ComputeAddress/tfinputs",
+                    "scriptPath": "tf-bs-scripts/GCP/Module/computeaddress.sh",
+                    "credPath": "terraform_scripts/GCP/Module/ComputeAddress/instance.json"
+                },
+                "CloudDNSPublic": {
+                    "tfvarPath": "terraform_scripts/GCP/Module/CloudDNS/CloudDNSPublic/tfinputs",
+                    "scriptPath": "tf-bs-scripts/GCP/Module/CloudDNS/clouddnspublic.sh",
+                    "credPath": "terraform_scripts/GCP/Module/CloudDNS/CloudDNSPublic/instance.json"
+                },
+                "CloudDNSPrivate": {
+                    "tfvarPath": "terraform_scripts/GCP/Module/CloudDNS/CloudDNSPrivate/tfinputs",
+                    "scriptPath": "tf-bs-scripts/GCP/Module/CloudDNS/clouddnsprivate.sh",
+                    "credPath": "terraform_scripts/GCP/Module/CloudDNS/CloudDNSPrivate/instance.json"
+                }
+            }
+        }
+    },
+    "port": 3001,
+    "session": {
+        "enable": true,
+        "timeout": 3600000
+    },
+    "secretKeys":{
+      "cloudConnections":  "MTIzNDU2Nzg5MDEyMzQ1Njc4OTAxMjM0NTY3ODkwMQ=="
+    },
+    "vault": {
+        "unsealKey": "Q1owY1VhTU9Qa0hsMERWRlBROVBiSi84eHBla091L0M0dVdZZkpVdldBYz0=",
+        "rootKey": "cy5LUUp5QVpxVkllSG9uQ25SdzNaTTZYdnM=",
+        "url": "aHR0cDovL2xvY2FsaG9zdDo4MjAwL3YxL3VzZXJz"
+    }
+} 

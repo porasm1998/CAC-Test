@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "cloud-automation-cafe-server1"
+  description: "cloud automation server"
+  annotations:
+    # This also supports bitbucket/xxx/yyy
+    circleci.com/project-slug: github/cloudAuto9/server_react
+spec:
+  type: service
+  lifecycle: experimental
+  owner: "sanskar"

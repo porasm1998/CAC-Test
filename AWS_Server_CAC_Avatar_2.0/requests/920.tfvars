@@ -1,0 +1,7 @@
+aws_region = "us-west-1" 
+s3_bucket_raw = "bucket667654" 
+s3_bucket_processed = "s36545" 
+lake_db_name = "datalake23" 
+data_lake_admin = "datalakeadmin2354" 
+glue_crawler_name = "glu5er55" 
+aws_account = "181597866704" 

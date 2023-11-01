@@ -1,0 +1,70 @@
+{
+    "fields": [
+      {
+        "name": "layout",
+  
+        "component": "two-column",
+  
+        "label": "AWS Details",
+  
+        "fields": [
+          {
+            "name": "aws_region",
+  
+            "label": "AWS Region",
+  
+            "component": "Dropdown",
+  
+            "options": "Region",
+  
+            "optionLabel": "name",
+  
+            "optionValue": "value",
+  
+            "filter": false,
+  
+            "showClear": true,
+  
+            "filterBy": "name",
+  
+            "placeholder": "Select AWS Region",
+  
+            "validators": [
+              {
+                "type": "required",
+  
+                "value": true
+              }
+            ]
+          }
+        ]
+      },
+  
+      {
+        "name": "layout",
+  
+        "component": "two-column",
+  
+        "label": "Bucket Details",
+  
+        "fields": [
+          {
+            "name": "bucket_name",
+  
+            "label": "Bucket Name",
+  
+            "component": "InputText",
+  
+            "type": "text"
+          }
+        ]
+      }
+    ],
+  
+    "footer": {
+      "submit": {
+        "label": "Review"
+      }
+    }
+  }
+  

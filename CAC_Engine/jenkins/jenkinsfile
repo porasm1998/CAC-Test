@@ -1,0 +1,60 @@
+pipeline {
+    agent any
+    environment {        
+        AWS_ACCESS_KEY = credentials('aws_access_key1')
+        AWS_SECRET_KEY = credentials('aws_secret_key1')
+    }
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+
+        stage('Choose Blueprint') {
+            steps {
+                script {
+                    def bluePrint = input(
+                        id: 'bluePrint',
+                        message: 'Choose the Blueprint to deploy:',
+                        parameters: [
+                            choice(
+                                choices: 'AWS_Foundation',
+                                description: 'Select the Blueprint folder',
+                                name: 'BLUEPRINT'
+                            )
+                        ]
+                    )
+                    env.BLUEPRINT = bluePrint
+                }
+            }
+        }
+
+        
+        stage('Terraform Init') {
+            steps {
+                dir("CAC_Engine/blueprints/${env.BLUEPRINT}") {
+                    //sh 'terraform init -backend-config="access_key=${AWS_ACCESS_KEY1}" -backend-config="secret_key=${AWS_SECRET_KEY1}"'
+                // sh 'terraform init -migrate-state'
+                sh 'terraform init -reconfigure'
+                }
+            }
+        }
+
+
+
+        stage('Terraform Apply') {
+            
+
+            steps {
+                dir("CAC_Engine/blueprints/${env.BLUEPRINT}") {
+                    sh """
+                    echo "STARTApply"
+                    terraform apply  -var="aws_access_key1=${AWS_ACCESS_KEY}" -var="aws_secret_key1=${AWS_SECRET_KEY}" -auto-approve
+                    echo "ENDApply"
+                    """
+                }
+            }
+        }
+    }
+}

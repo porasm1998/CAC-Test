@@ -1,0 +1,6 @@
+aws_region = "us-east-1" 
+s3_bucket_raw = "xyzabc123" 
+s3_bucket_processed = "absxyz123" 
+lake_db_name = "datalake123" 
+glue_crawler_name = "glue123" 
+aws_account = "181597866704" 

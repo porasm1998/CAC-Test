@@ -1,0 +1,9 @@
+/* vpc1                    = "vpc-065d95c9f16735f37"
+aws_region              = "us-west-2"
+vpc1_subnet_ids         = ["subnet-0c085a6607af64736"]
+vpc1_route_table_id     = "rtb-08f1659443bb1eba2"
+destination_cidr_block1 = "10.0.0.0/16"
+vpc2                    = "vpc-0bc9d05cd8e0fd68c"
+vpc2_subnet_ids         = ["subnet-007b130713d65437d"]
+destination_cidr_block2 = "10.10.0.0/16"
+vpc2_route_table_id     = "rtb-082d7765b6f27c847" */

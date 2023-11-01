@@ -1,0 +1,87 @@
+{
+    "fields": [
+        
+        {
+            "name": "layout",
+            "component": "two-column",
+            "label": "Region",
+            "uniqueKey":"uuidv4()",
+            "fields": [
+                {
+                    "name": "aws_region",
+                    "label": "AWS Region",
+                    "component": "Dropdown",
+                    "options":"Region",
+                    "optionLabel": "name",
+                    "optionValue": "value",
+                    "filter": false,
+                    "showClear": true,
+                    "filterBy": "name",
+                    "placeholder": "Select AWS Region",
+                    "uniqueKey": "uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "layout",
+            "component": "two-column",
+            "label": "SNS Details",
+            "uniqueKey":"uuidv4()",
+            "fields": [
+                {
+                    "name": "sns_topic_name",
+                    "label": "SNS Topic Name",
+                    "component": "InputText",
+                    "type": "text",
+                    "uniqueKey":"uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+
+                },
+                {
+                    "name": "sns_subscription_email_address_list",
+                    "label": "Subscriptions",
+                    "component": "Chips",
+                    "uniqueKey":"uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+
+                },
+                {
+                    "name": "stack_name",
+                    "label": "Stack Name",
+                    "component": "InputText",
+                    "type": "text",
+                    "uniqueKey":"uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+
+                }
+
+            ]
+        }
+        
+  
+    ],
+    "footer": {
+        "submit": { "label": "Review" }
+    }
+  }

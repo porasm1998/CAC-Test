@@ -1,0 +1,84 @@
+{
+    "fields": [
+        
+        {
+            "name": "layout",
+            "component": "two-column",
+            "label": "Region",
+            "uniqueKey":"uuidv4()",
+            "fields": [
+                {
+                    "name": "aws_region",
+                    "label": "AWS Region",
+                    "component": "Dropdown",
+                    "options":"Region",
+                    "optionLabel": "name",
+                    "optionValue": "value",
+                    "filter": false,
+                    "showClear": true,
+                    "filterBy": "name",
+                    "placeholder": "Select AWS Region",
+                    "uniqueKey": "uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "layout",
+            "component": "two-column",
+            "label": "VPC Details",
+            "uniqueKey":"uuidv4()",
+            "fields": [
+                {
+                    "name": "cidr_block",
+                    "label": "VPC CIDR Block",
+                    "component": "InputText",
+                    "type": "text",
+                    "uniqueKey":"uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+
+                },
+                {
+                    "name": "public_subnet_cidr_block",
+                    "label": "Public Subnet CIDR Block",
+                    "component": "Chips",
+                    "type": "text",
+                    "uniqueKey":"uuidv4()"
+                    
+
+                },
+                {
+                    "name": "private_subnet_cidr_block",
+                    "label": "Private Subnet CIDR Block",
+                    "component": "Chips",
+                    "uniqueKey":"uuidv4()"
+                    
+
+                },
+                {
+                    "name": "availability_zone",
+                    "label": "Availability Zone",
+                    "component": "Chips",
+                    "uniqueKey":"uuidv4()"
+                }
+               
+
+            ]
+        }
+        
+  
+    ],
+    "footer": {
+        "submit": { "label": "Review" }
+    }
+  }

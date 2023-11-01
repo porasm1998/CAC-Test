@@ -1,0 +1,20 @@
+module "ekscluster" {
+    source = "./modules"
+    vpc_name = var.vpc_name
+    aws_region = var.aws_region
+    vpc_cidr = var.vpc_cidr
+    subnet1_cidr_block = var.subnet1_cidr_block
+    subnet2_cidr_block = var.subnet2_cidr_block
+    subnet3_cidr_block = var.subnet3_cidr_block
+    availability_zone1 = var.availability_zone1
+    availability_zone2 = var.availability_zone2
+    availability_zone3 = var.availability_zone3
+    cluster_name = var.cluster_name
+    eks_version = var.eks_version
+    endpoint_private_access = var.endpoint_private_access
+    endpoint_public_access = var.endpoint_public_access
+    node_group_name = var.node_group_name
+    desired_size = var.desired_size
+    max_size = var.max_size
+    min_size = var.min_size
+}

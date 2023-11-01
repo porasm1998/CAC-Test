@@ -1,0 +1,61 @@
+{
+    "fields": [
+      {
+        "name": "layout",
+  
+        "component": "two-column",
+  
+        "label": "Vpn Gateway",
+  
+        "fields": [
+            {
+                "name": "gateway_name",
+      
+                "label": "Gateway Name",
+      
+                "component": "InputText",
+      
+                "type": "text"
+              },
+
+            {
+            "name": "region_name",
+  
+            "label": "Region",
+  
+            "component": "InputText",
+  
+            "type": "text"
+          },
+          
+          {
+            "name": "network_name",
+  
+            "label": "Network",
+  
+            "component": "InputText",
+  
+            "type": "text"
+          },
+          
+         
+          {
+            "name": "project_id",
+  
+            "label": "Project Id",
+  
+            "component": "InputText",
+  
+            "type": "text"
+          }
+        ]
+      }
+    ],
+  
+    "footer": {
+      "submit": {
+        "label": "Review"
+      }
+    }
+  }
+  

@@ -1,0 +1,94 @@
+{
+    "fields": [
+        
+        {
+            "name": "layout",
+            "component": "two-column",
+            "label": "Region",
+            "uniqueKey":"uuidv4()",
+            "fields": [
+                {
+                    "name": "aws_region",
+                    "label": "AWS Region",
+                    "component": "Dropdown",
+                    "options":"Region",
+                    "optionLabel": "name",
+                    "optionValue": "value",
+                    "filter": false,
+                    "showClear": true,
+                    "filterBy": "name",
+                    "placeholder": "Select AWS Region",
+                    "uniqueKey": "uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "layout",
+            "component": "two-column",
+            "label": "VPC Details",
+            "uniqueKey":"uuidv4()",
+            "fields": [
+                {
+                    "name": "vpc_id",
+                    "label": "VPC ID",
+                    "component": "Dropdown",
+                    "options":"Vpc",
+                    "optionLabel": "name",
+                    "optionValue": "value",
+                    "filter": false,
+                    "showClear": true,
+                    "filterBy": "name",
+                    "placeholder": "Select VPC ID",
+                    "uniqueKey": "uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "layout",
+            "component": "two-column",
+            "label": "Subnet Details",
+            "uniqueKey":"uuidv4()",
+            "fields": [
+                
+                {
+                    "name": "subnet_cidr",
+                    "label": "CIDR Range",
+                    "component": "Chips",
+                    "uniqueKey":"uuidv4()"
+
+                },
+                {
+                    "name": "availability_zone_subnet",
+                    "label": "Availability Zone",
+                    "component": "Chips",
+                    "uniqueKey":"uuidv4()"
+
+                },
+                {
+                    "name": "Nametag",
+                    "label": "Name of Subnets",
+                    "component": "Chips",
+                    "uniqueKey":"uuidv4()"
+
+                }
+            ]
+        }
+        
+  
+    ],
+    "footer": {
+        "submit": { "label": "Review" }
+    }
+  }

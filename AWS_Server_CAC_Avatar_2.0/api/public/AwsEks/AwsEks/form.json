@@ -1,0 +1,243 @@
+{
+    "fields": [
+        
+        {
+            "name": "layout",
+            "component": "two-column",
+            "label": "AWS Region",
+            "uniqueKey":"uuidv4()",
+            "fields": [
+                {
+                    "name": "aws_region",
+                    "label": "AWS Region",
+                    "component": "Dropdown",
+                    "options":"Region",
+                    "optionLabel": "name",
+                    "optionValue": "value",
+                    "filter": false,
+                    "showClear": true,
+                    "filterBy": "name",
+                    "placeholder": "Select AWS Region",
+                    "uniqueKey": "uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "layout",
+            "component": "two-column",
+            "label": "Cluster VPC Details",
+            "uniqueKey":"uuidv4()",
+            "fields": [
+
+                {
+                    "name": "vpc_name",
+                    "label": "Name of VPC",
+                    "component": "InputText",
+                    "type": "text",  
+                    "uniqueKey":"uuidv4()"
+
+                },
+                {
+                    "name": "vpc_cidr",
+                    "label": "VPC CIDR Range",
+                    "component": "InputText",
+                    "type": "text",   
+                    "uniqueKey":"uuidv4()"
+
+                }
+                
+            ]
+        },
+        {
+            "name": "layout",
+            "component": "two-column",
+            "label": "Cluster Subnet Details",
+            "uniqueKey":"uuidv4()",
+            "fields": [
+                {
+                    "name": "subnet1_cidr_block",
+                    "label": "Subnet-1 CIDR Range",
+                    "component": "InputText",
+                    "type": "text",  
+                    "uniqueKey":"uuidv4()"
+
+                },
+                {
+                    "name": "availability_zone1",
+                    "label": "Subnet-1 Availability Zone",
+                    "component": "Dropdown",
+                    "options":"Availability_Zone",
+                    "optionLabel": "name",
+                    "optionValue": "value",
+                    "filter": false,
+                    "showClear": true,
+                    "filterBy": "name",
+                    "placeholder": "Select Subnet-1 Availability Zone",
+                    "uniqueKey": "uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+                },
+
+                {
+                    "name": "subnet2_cidr_block",
+                    "label": "Subnet-2 CIDR Range",
+                    "component": "InputText",
+                    "type": "text",  
+                    "uniqueKey":"uuidv4()"
+
+                },
+                {
+                    "name": "availability_zone2",
+                    "label": "Subnet-2 Availability Zone",
+                    "component": "Dropdown",
+                    "options":"Availability_Zone",
+                    "optionLabel": "name",
+                    "optionValue": "value",
+                    "filter": false,
+                    "showClear": true,
+                    "filterBy": "name",
+                    "placeholder": "Select Subnet-2 Availability Zone",
+                    "uniqueKey": "uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+                },
+
+                {
+                    "name": "subnet3_cidr_block",
+                    "label": "Subnet-3 CIDR Range",
+                    "component": "InputText",
+                    "type": "text",   
+                    "uniqueKey":"uuidv4()"
+
+                },
+                {
+                    "name": "availability_zone3",
+                    "label": "Subnet-3 Availability Zone",
+                    "component": "Dropdown",
+                    "options":"Availability_Zone",
+                    "optionLabel": "name",
+                    "optionValue": "value",
+                    "filter": false,
+                    "showClear": true,
+                    "filterBy": "name",
+                    "placeholder": "Select Subnet-3 Availability Zone",
+                    "uniqueKey": "uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+                }
+            
+               
+            ]
+        },
+        {
+            "name": "layout",
+            "component": "two-column",
+            "label": "EKS Cluster Details",
+            "uniqueKey":"uuidv4()",
+            "fields": [
+                {
+                    "name": "cluster_name",
+                    "label": "Name of EKS Cluster",
+                    "component": "InputText",
+                    "type": "text",  
+                    "uniqueKey":"uuidv4()"
+
+                },
+
+                {
+                    "name": "eks_version",
+                    "label": "Desired Kubernetes master version",
+                    "component": "InputText",
+                    "type": "text",  
+                    "uniqueKey":"uuidv4()"
+
+                },
+
+                {
+                    "name": "endpoint_private_access",
+                    "label": "EKS private API server endpoint",
+                    "component": "InputText",
+                    "type": "text",   
+                    "uniqueKey":"uuidv4()"
+
+                },
+               
+                {
+                    "name": "endpoint_public_access",
+                    "label": "EKS public API server endpoint",
+                    "component": "InputText",
+                    "type": "text",   
+                    "uniqueKey":"uuidv4()"
+                }            
+ 
+            ]
+        },
+
+
+        {
+            "name": "layout",
+            "component": "two-column",
+            "label": "Cluster Node group Details",
+            "uniqueKey":"uuidv4()",
+            "fields": [
+                {
+                    "name": "node_group_name",
+                    "label": "Name of Nodegroups",
+                    "component": "InputText",
+                    "type": "text",  
+                    "uniqueKey":"uuidv4()"
+
+                },
+                {
+                    "name": "desired_size",
+                    "label": "Desired number of worker nodes",
+                    "component": "InputText",
+                    "type": "text",  
+                    "uniqueKey":"uuidv4()"
+
+                },
+                {
+                    "name": "max_size",
+                    "label": "Maximum number of worker nodes",
+                    "component": "InputText",
+                    "type": "text",   
+                    "uniqueKey":"uuidv4()"
+
+                },
+               
+                {
+                    "name": "min_size",
+                    "label": "Minimum number of worker nodes",
+                    "component": "InputText",
+                    "type": "text",   
+                    "uniqueKey":"uuidv4()"
+                }
+           
+               
+            ]
+        }       
+          
+  
+    ],
+    "footer": {
+        "submit": { "label": "Review" }
+    }
+  }

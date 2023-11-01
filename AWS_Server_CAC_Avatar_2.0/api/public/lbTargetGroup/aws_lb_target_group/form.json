@@ -1,0 +1,87 @@
+{
+  "fields": [
+      
+      {
+          "name": "layout",
+          "component": "two-column",
+          "label": "Region",
+          "uniqueKey":"uuidv4()",
+          "fields": [
+              {
+                  "name": "aws_region",
+                  "label": "AWS Region",
+                  "component": "Dropdown",
+                  "options":"Region",
+                  "optionLabel": "name",
+                  "optionValue": "value",
+                  "filter": false,
+                  "showClear": true,
+                  "filterBy": "name",
+                  "placeholder": "Select AWS Region",
+                  "uniqueKey": "uuidv4()",
+                  "validators": [
+                      {
+                          "type": "required",
+                          "value": true
+                      }
+                  ]
+              }
+          ]
+      },
+
+      {
+          "name": "layout",
+          "component": "two-column",
+          "label": "Target Group Details",
+          "uniqueKey":"uuidv4()",
+          "fields": [
+              {
+                  "name": "n_target_group_name",
+                  "label": "Enter the Target Group Name",
+                  "component": "InputText",
+                  "type": "text",
+                  "uniqueKey":"uuidv4()",
+                  "validators": [
+                      {
+                          "type": "required",
+                          "value": true
+                      }
+                  ]
+
+              },
+              {
+                "name": "n_target_type",
+                "label": "Select Target Type",
+                "component": "Dropdown",
+                "options":"Target_Type",
+                "optionLabel": "name",
+                "optionValue": "value",
+                "filter": false,
+                "showClear": true,
+                "filterBy": "name",
+                "placeholder": "Select Target Type",
+                "uniqueKey": "uuidv4()",
+                "validators": [
+                    {
+                        "type": "required",
+                        "value": true
+                    }
+                ]
+            },              
+              {
+                  "name": "n_vpc_id",
+                  "label": "Enter VPC ID",
+                  "component": "InputText",
+                  "type": "text",
+                  "uniqueKey":"uuidv4()"
+              }
+
+          ]
+      }
+  
+
+  ],
+  "footer": {
+      "submit": { "label": "Review" }
+  }
+}

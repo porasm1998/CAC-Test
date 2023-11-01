@@ -1,0 +1,1 @@
+vault server -config=./vault_scripts/config.hcl -address="http://localhost:8200" 

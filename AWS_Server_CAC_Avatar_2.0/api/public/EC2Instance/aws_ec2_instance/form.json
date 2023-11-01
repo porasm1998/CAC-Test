@@ -1,0 +1,94 @@
+{
+  "fields": [
+      
+      {
+          "name": "layout",
+          "component": "two-column",
+          "label": "Region",
+          "uniqueKey":"uuidv4()",
+          "fields": [
+              {
+                  "name": "aws_region",
+                  "label": "AWS Region",
+                  "component": "Dropdown",
+                  "options":"Region",
+                  "optionLabel": "name",
+                  "optionValue": "value",
+                  "filter": false,
+                  "showClear": true,
+                  "filterBy": "name",
+                  "placeholder": "Select AWS Region",
+                  "uniqueKey": "uuidv4()",
+                  "validators": [
+                      {
+                          "type": "required",
+                          "value": true
+                      }
+                  ]
+              }
+          ]
+      },
+
+      {
+          "name": "layout",
+          "component": "two-column",
+          "label": "EC2 Instance Details",
+          "uniqueKey":"uuidv4()",
+          "fields": [
+              {
+                
+                    "name": "ami_id",
+                    "label": "AMI ID",
+                    "component": "Dropdown",
+                    "options":"Amiid",
+                    "optionLabel": "name",
+                    "optionValue": "value",
+                    "filter": false,
+                    "showClear": true,
+                    "filterBy": "name",
+                    "placeholder": "Select AMI ID",
+                    "uniqueKey": "uuidv4()",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "value": true
+                        }
+                    ]
+                
+              },
+              {
+                "name": "instance_type",
+                "label": "Select Instance Type",
+                "component": "Dropdown",
+                "options":"Instance_Type",
+                "optionLabel": "name",
+                "optionValue": "value",
+                "filter": false,
+                "showClear": true,
+                "filterBy": "name",
+                "placeholder": "Select Instance Type",
+                "uniqueKey": "uuidv4()",
+                "validators": [
+                    {
+                        "type": "required",
+                        "value": true
+                    }
+                ]
+            },
+              {
+                  "name": "tagname",
+                  "label": "Enter Instance Name",
+                  "component": "InputText",
+                  "type": "text",
+                  "uniqueKey":"uuidv4()"
+              }
+
+          ]
+      }
+  
+
+  ],
+  "footer": {
+      "submit": { "label": "Review" }
+  }
+}
