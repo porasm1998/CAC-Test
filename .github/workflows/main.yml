@@ -21,6 +21,7 @@ jobs:
     - name: Install Dependencies
       run: |
         cd AWS_Client_CAC_Avatar_2.0
+        npm install react@^17.0.0 react-dom@^17.0.0
         npm install 
         
 
